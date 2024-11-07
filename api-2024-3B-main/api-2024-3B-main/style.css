@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte-titulo: "Agdasima", sans-serif;
+    --fonte-texto: "Afacad Flux", sans-serif; 
+    --federal-blue: #03045eff;  /* Cor escura para fundo */
+    --marian-blue: #023e8aff;  /* Azul escuro para cabeçalhos e detalhes */
+    --honolulu-blue: #0077b6ff;  /* Azul vibrante para links */
+    --blue-green: #0096c7ff;    /* Azul mais claro, usado para destaques */
+    --pacific-cyan: #00b4d8ff;  /* Ciano para elementos interativos */
+    --vivid-sky-blue: #48cae4ff; /* Azul claro, excelente para botões */
+    --non-photo-blue: #90e0efff;  /* Azul suave, para fundos claros */
+    --non-photo-blue-2: #ade8f4ff; /* Azul mais claro, para detalhes de hover */
+    --light-cyan: #caf0f8ff;    /* Azul quase branco para fundos sutis */
+}
+
+body {
+    font-family: var(--fonte-texto);
+    background-color: var(--non-photo-blue);  /* Fundo claro */
+    color: var(--federal-blue);  /* Cor do texto principal */
+    height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--marian-blue);  /* Azul mais escuro para o cabeçalho */
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    color: var(--light-cyan);  /* Título em um tom suave e contrastante */
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    background-color: var(--honolulu-blue);  /* Azul vibrante para o fundo de navegação */
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--pacific-cyan);  /* Azul claro para links */
+    margin: 0 2rem;
+    font-size: 1.4rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: var(--vivid-sky-blue);  /* Mudança de cor para um azul ainda mais vibrante */
+    transform: scale(1.05);  /* Aumento suave no tamanho ao passar o mouse */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);  /* Efeito de sombra leve no hover */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--marian-blue);
+    color: var(--non-photo-blue);  /* Cor mais suave para o texto do rodapé */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    font-family: var(--fonte-texto);
+}
+
+button {
+    background-color: var(--blue-green);  /* Azul esverdeado para botões */
+    color: var(--light-cyan);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--pacific-cyan);  /* Ciano mais claro para o hover */
+    transform: scale(1.05);
+}
